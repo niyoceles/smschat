@@ -1,0 +1,44 @@
+{
+  "name": "m-tasks-app",
+  "version": "1.0.0",
+  "description": "Todo app using nodejs and mongo db",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "start": "nodemon ./src/app.js --exec babel-node --presets @babel/preset-env",
+    "test": "nyc --reporter=html --reporter=text mocha --require @babel/register src/test/allTests.js",
+    "test-local": "mocha --require @babel/register src/tests/allTests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyoceles/m-tasks-app.git"
+  },
+  "author": "Celestin NIYONSABA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niyoceles/m-tasks-app/issues"
+  },
+  "homepage": "https://github.com/niyoceles/m-tasks-app#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.8.10",
+    "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint-config-airbnb-standard": "^3.0.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1"
+  }
+}
