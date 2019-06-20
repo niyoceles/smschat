@@ -1,5 +1,4 @@
 # smschat
-## Using Postgres, Nodejs, Express and Sequeliser
 ### SmsChat is a simple CRUD application built for saving saving the messages of the users
 
 ## Built With
