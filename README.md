@@ -1,5 +1,5 @@
 # smschat
-### SmsChat is a simple CRUD application built for saving saving the messages of the users
+### SmsChat is a simple CRUD application built for saving the messages of the users
 
 ## Built With
 
